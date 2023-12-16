@@ -5,12 +5,11 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
-
 <head>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact</title>
+<title>Academic Journey</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -20,10 +19,11 @@
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
+
 <body>
 <!-- header section -->
-<section class="banner" role="banner"> 
-  <!--header navigation -->
+<section class="banner" role="banner">
+<!--header navigation -->
   <header id="header">
     <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
       <nav class="navigation" role="navigation">
@@ -34,11 +34,11 @@
         </ul>
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-  </header>
-  <!--header navigation --> 
-</section>
-<!-- header section --> 
-<!-- title section -->
+      </header>
+      <!--header navigation -->
+  </section>
+  <!-- header section -->
+  <!-- text banner section -->
 <section id="banner" class="banner no-padding">
   <div class="container-fluid">
     <div class="row no-gutter">
@@ -46,7 +46,7 @@
         <li>
           <div class="col-md-12">
             <blockquote>
-              <p>Contact</p>
+              <p>A young Academic Journey</p>
             </blockquote>
           </div>
         </li>
@@ -54,36 +54,60 @@
     </div>
   </div>
 </section>
-<!-- title section --> 
-<!-- contact section -->
-<section id="teams" class="section teams">
+<!-- Text banner section -->
+<!-- About section -->
+<section class="section teams">
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-5">
-        <div class="bio">
-          <h4>I am honest, discreet and always focus on your goals.<br>
-            If you are looking for a experienced designer, just leave me a message and I'll contact you soon.</h4>
-        </div>
+        <div class="bio"> <img src="images/ipeit.png" alt="" class="img-responsive"> </div>
       </div>
-      <div class="col-md-7 col-sm-7 conForm">
-        <div class="contact">
-          <div id="message"></div>
-          <form method="post" action="#" name="cform" id="cform" onsubmit="return validateForm()">
-            <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name...">
-            <div id="nameError" class="error"></div>
-            <input name="email" id="email" type="email" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address...">
-            <div id="emailError" class="error"></div>
-            <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Project Details..."></textarea>
-            <div id="commentsError" class="error"></div>
-            <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-            <div id="simple-msg"></div>
-          </form>
+      <div class="col-md-7 col-sm-7">
+        <div class="bio"> <img src="images/team-1.jpg" alt="" class="img-responsive">
+          <div class="bio-content">
+            <h5>Tunis Preparatory Engineering Institute</h5>
+            <p>The IPEIT is an institution of higher education and research ability to provide preparatory training to students who will spend national competitions to integrate graduate engineering education. </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- contact section -->
+<section class="section teams">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-7">
+        <div class="bio"> <img src="images/team-1.jpg" alt="" class="img-responsive">
+          <div class="bio-content">
+            <h5>International Polytech University</h5>
+            <p>Polytech IntlUniversity is a private engineering school in Tunisia that aims at excellence. Its objective is to create a new generation of qualifiedengineers andarchitects who will be immediately operational.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-5">
+        <div class="bio"> <img src="images/pi.png" alt="" class="img-responsive"> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section teams">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <div class="bio"> <img src="images/esprit.png" alt="" class="img-responsive"> </div>
+      </div>
+      <div class="col-md-7 col-sm-7">
+        <div class="bio"> <img src="images/team-1.jpg" alt="" class="img-responsive">
+          <div class="bio-content">
+            <h5>The Private Higher School of Engineering and Technology</h5>
+            <p>The Private Higher School of Engineering and Technology or ESPRIT, is a private engineering school in Tunisia based in Ariana and accredited by the Ministry of Higher Education and Scientific Research.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About section -->
 <!-- footer -->
 <footer class="section footer">
   <div class="footer-bottom">
@@ -111,53 +135,7 @@
 <script src="js/jquery.waypoints.min.js"></script> 
 <script src="js/retina.min.js"></script> 
 <script src="js/modernizr.js"></script> 
-<script src="js/jquery.contact.js"></script> 
 <script src="js/main.js"></script>
-<script>
-  function validateForm() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var comments = document.getElementById("comments").value;
-
-    var nameError = document.getElementById("nameError");
-    var emailError = document.getElementById("emailError");
-    var commentsError = document.getElementById("commentsError");
-
-    nameError.innerHTML = "";
-    emailError.innerHTML = "";
-    commentsError.innerHTML = "";
-
-    var isValid = true;
-
-    if (name === "") {
-      nameError.innerHTML = "Please enter your name";
-      isValid = false;
-    }
-
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === "") {
-      emailError.innerHTML = "Please enter your email";
-      isValid = false;
-    } else if (!email.match(emailPattern)) {
-      emailError.innerHTML = "Please enter a valid email address";
-      isValid = false;
-    }
-
-    if (comments === "") {
-      commentsError.innerHTML = "Please enter project details";
-      isValid = false;
-    }
-
-    return isValid;
-  }
-</script>
-
-<style>
-  .error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-</style>
 </body>
 </html>
+
